@@ -39,7 +39,7 @@ if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
         notifies :run, resources(:execute => "reload-nginx")
       end
     end
-    
+    ey_cloud_report ""
   end
 
 end
